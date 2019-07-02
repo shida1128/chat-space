@@ -1,0 +1,26 @@
+= render 'side-bar'
+
+.Chat--main
+  .Main--header
+    .Main--header__left--box
+      野球
+    .Main--header__edit
+      EDIT
+    .Main--header__member--box
+      .Main--header__member--box__name
+        Member: shida
+  .Message
+    .Message__box
+      .Message__box__name
+        shida
+      .Message__box__date
+        2017-6-25 18:13:00 
+      .Message__box__message
+        おはよう
+  %form
+    %input.form__message
+    .form__mask
+      %label.form__mask__image
+        = fa_icon 'picture-o', class: 'icon'
+        %input.hidden{type: 'file'}
+    %input.form__submit{type: 'submit', value: 'send'}
