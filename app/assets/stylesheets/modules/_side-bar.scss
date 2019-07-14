@@ -34,9 +34,11 @@
       color: $white;
       &__name{
         font-size: $side_group_name;
+        color: $white;
       }
       &__last{
         font-size: $side_group_message;
+        color: $white;
         padding-top: 5px;
       }
     }
